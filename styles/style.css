@@ -38,11 +38,11 @@ section {
   grid-template-columns: 1fr .5fr;
   grid-template-rows: 1fr;
   justify-content: space-between;
+  -webkit-animation: shift 1s forwards;
 }
 
-#card:hover {
-  transform: translate(15px, 15px);
-  transition: transform 0.5s;
+@-webkit-keyframes shift {
+  100% { transform: translate(10px, 10px);}
 }
 
 ul.tags {
@@ -79,7 +79,9 @@ ul.tags {
 }
 
 .info {
-  width: 70%;
+  width: 60%;
+  overflow: auto;
+  word-wrap: break-word;
 }
 
 header {
