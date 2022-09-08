@@ -12,97 +12,115 @@ body {
   display:flex;
   justify-content:center;
   align-items:center;
-  color:#10214e;
+  color:white;
   background-color: #ebebeb;
 }
 
-section#card {
-  position: relative;
-  display: grid;
-  grid-template-rows: 1fr .6fr .3fr;
-  text-align: center;
-  background-color: #10214e;
-  width: 23rem;
-  height: 38rem;
-  margin: 0;
-  padding: 1em;
-}
-
-.banner {
-  position: relative;
-  height: 14em;
-  background-color: white;
-  box-shadow: inset 50px 0px 10px -5px rgba(0, 0, 0, 0.14);
-  overflow: hidden;
-  text-align: right;
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 35em;
+  background-color: #232323;
+  padding: 2em;
 }
 
 .profilePicture {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 75%;
-  height: auto;
-  z-index: 0;
+  text-align: center;
 }
 
-.name {
-  position: absolute;
-  bottom: .4em;
-  left: .4em;
-  text-align: left;
-  z-index: 1;
+.picture {
+  border-radius: 50%;
+  height: 14em;
+  width: 14em;
+  background-color: #37422F;
+  overflow: hidden;
 }
 
-.name h1, h2 {
-  margin: 0;
-}
-
-.name h2 {
-  font-weight: lighter;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-li {
+.picture img {
   position: relative;
-  color: white;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  top: 1.4em;
+  left: .3em;
   width: 100%;
+  height: 100%;
+  transform: scale(2.6);
+  object-fit: contain;
 }
 
-.light_item {
-  background-color: #52679e;
+.fullname {
+color: white;
 }
 
-ul li {
-  display: flex;
-  justify-content: space-between;
-  background-color: #34487e;
-  padding: .4em;
-  margin-bottom: 1em;
+.dashboard  {
+  display: grid;
+  grid-template-rows: .2fr 1fr .5fr;
+  width: 100%;
+  gap: 4em;
 }
 
-button.aboutMe {
+.dashboardItem {
+  height: 100%;
+  background-color: #373737;
+  border-radius: 7px;
+  position: relative;
+}
+
+.dashboardItem img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  padding: 3em;
+  opacity: .5;
+  transition: .3s;
+}
+
+.dashboardItem img:hover {
+  opacity: 1;
+  transition: 0s;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 25em;
+  row-gap: 4em;
+  column-gap: 2em;
+}
+
+.categories .dashboardItem {
   cursor: pointer;
-  border: none;
-  border-top: 4px solid red;
-  color: white;
-  font-size: xx-large;
-  background-color: #34487e;
 }
 
-button.aboutMe:active {
-  transform: translateY(-4px);
-  border: none;
+::before {
+  position: relative;
+  bottom: 1.5em;
 }
 
-button.aboutMe:hover {
-  opacity: .9;
+.github::before {
+  content: "GitHub";
+}
+
+.hobby::before {
+  content: "Hobby's";
+}
+
+.vaardigheden::before {
+  content: "Vaardigheden";
+}
+
+.nummers::before {
+  content: "favoriete nummers";
+}
+
+.films::before {
+  content: "Favoriete film/series";
+}
+
+.aboutMe::before {
+  content: "Over mij";
 }
