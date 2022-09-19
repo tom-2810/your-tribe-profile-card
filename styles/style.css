@@ -20,14 +20,14 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  width: 35em;
+  max-width: 35em;
+  gap: 2em;
   background-color: #232323;
   padding: 2em;
 }
 
-.profilePicture {
+.profile {
   text-align: center;
 }
 
@@ -35,7 +35,6 @@ body {
   border-radius: 50%;
   height: 14em;
   width: 14em;
-  background-color: #37422F;
   overflow: hidden;
 }
 
@@ -47,6 +46,7 @@ body {
   height: 100%;
   transform: scale(2.6);
   object-fit: contain;
+  background-color: #37422F;
 }
 
 .fullname {
@@ -55,72 +55,38 @@ color: white;
 
 .dashboard  {
   display: grid;
-  grid-template-rows: .2fr 1fr .5fr;
+  gap: 2em;
   width: 100%;
-  gap: 4em;
-}
-
-.dashboardItem {
-  height: 100%;
-  background-color: #373737;
-  border-radius: 7px;
-  position: relative;
-}
-
-.dashboardItem img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
-  padding: 3em;
-  opacity: .5;
-  transition: .3s;
-}
-
-.dashboardItem img:hover {
-  opacity: 1;
-  transition: 0s;
 }
 
 .categories {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 25em;
-  row-gap: 4em;
-  column-gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
 }
 
-.categories .dashboardItem {
+.categories .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  background-color: #3f3f3f;
+  padding: .5em;
   cursor: pointer;
 }
 
-::before {
-  position: relative;
-  bottom: 1.5em;
+.categories img {
+  max-width: 100%;
+  max-height: auto;
 }
 
-.github::before {
-  content: "GitHub";
+.github {
+  background-color: #3f3f3f;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
 }
 
-.hobby::before {
-  content: "Hobby's";
-}
-
-.vaardigheden::before {
-  content: "Vaardigheden";
-}
-
-.nummers::before {
-  content: "favoriete nummers";
-}
-
-.films::before {
-  content: "Favoriete film/series";
-}
-
-.aboutMe::before {
-  content: "Over mij";
+.aboutMe p {
+  background-color: #3f3f3f;
 }
