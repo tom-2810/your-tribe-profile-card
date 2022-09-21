@@ -38,6 +38,7 @@ h2 {
   padding: 2em;
   -webkit-animation: slide-down 1.5s ease-out;
   animation-fill-mode: forwards;
+  overflow: hidden;
 }
 
 .profile {
@@ -146,7 +147,7 @@ color: white;
   transform: scale(1.01);
 }
 
-.aboutMe p {
+article p {
   display: flex;
   padding: 1em;
   margin: 0;
@@ -154,6 +155,32 @@ color: white;
   font-size: large;
   background-color: rgba(90, 90, 90, 0.4);
   border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  height: 100%;
+  width: 100%;
+  transition: .5s;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #0e0e0e;
+  padding: 2em;
+}
+
+.overlay img {
+  height: 5em;
+  width: auto;
+}
+
+.overlay header {
+  text-align: center;
+}
+
+.overlay .close {
+  margin-left: auto;
 }
 
 @-webkit-keyframes slide-down {
