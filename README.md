@@ -1,6 +1,7 @@
 Visitekaartje
 
-Deze leertaak is mijn eerste project aan de FDND opleiding. Voor deze leertaak heb ik een visitekaartje gemaakt, waar wat basis informatie over mij in staat vermeld.
-Deze leertaak hoort bij sprint 1 "Your Tribe". Dit is een deeltaak die ik individueel heb uitgevoert.
+Dit visitekaartje is van Tom Poortman. Het bevat een profielfoto, naam, about me en een dashboard.
+Het dashboard toont hobby's, skills, nummer en film. Door te klikken op één van deze items verschijnt er een overlay.
+Deze overlay legt wat meer informatie toe over die categorie.
 
 Om mijn visitekaartje te maken heb ik (tot nu toe) HTML en CSS toegepast. Tijdens dit proces heb ik gewerkt volgens de Development Lifecycle.
