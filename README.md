@@ -11,9 +11,11 @@ Tijdens dit proces heb ik gewerkt volgens de Development Lifecycle.
 ### 🏠 Home
 
 Dit is de eerste wat de gebruiker ziet, zodra mijn visitekaartje wordt ingeladen.
+
 <img src="https://user-images.githubusercontent.com/112861614/191741906-649171be-f50b-4771-9499-48eef93c7ed7.png" width="250">
 
 ### 🌫 Overlay
 
 En wanneer er een categorie binnen het dashboard wordt gekozen, verschijnt er een overlay.
+
 <img src="https://user-images.githubusercontent.com/112861614/191742513-24b1085a-43c2-4687-9781-8598d1c5abe5.png" width="250">
